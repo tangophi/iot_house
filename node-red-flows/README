@@ -1,0 +1,33 @@
+This repo contains the node-red flow for managing various IoT boards in a house.
+It does this by getting/sending MQTT messages from/to various boards as well as
+socket messages from a NetIO based smartphone app.  It also acts as an interface
+to send data to thingspeak.com and to send tweets.
+
+The flows_pi2.json file should be copied to /home/pi/.node-red folder.  Of course,
+node-red needs to be installed.
+
+How to install node-red
+=======================
+1. Install nodejs.  The standard packages dont work.  Only the one below works.
+  http://conoroneill.net//download-compiled-version-of-nodejs-0120-stable-for-raspberry-pi-here
+ 
+2. Install node-red
+  /usr/local/bin/npm install -g node-red
+
+The above steps to install node-red on a Rpi2 may change with time.
+
+
+Changelog:
+
+v1.0 - July 22, 2015
+====================
+* Four boards are managed at the moment.
+* Details of the first board can be found at
+  http://www.instructables.com/id/An-inexpensive-IoT-enabler-using-ESP8266/
+* Details of the second board can be found at
+
+* The third board is a Arduino Pro Mini/ESP8266/WS281B based mood lighting project
+  in the living room.
+
+* The fourth board is a ATMEGA1284P/ESP8266 based project that uses relays with
+  modified off-the-shelf power strips to act as a Network Power Switch.
