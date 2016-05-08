@@ -19,15 +19,27 @@ The above steps to install node-red on a Rpi2 may change with time.
 
 Changelog:
 
-v1.0 - July 22, 2015
-====================
+May 08, 2016
+============
+* More boards have been added.
+* The fourth board is a just a helper console for the fifth board.  It also has a servo to lift/retract
+  the 2.4 inch TFT display mounted under the TV.  It has another servo to block/unblock the IR receiver 
+  of the media player.
+* The fifth board is a ATMEGA1284p/ESP8266 based project to control lighting as well as ceiling fan.
+  It also has an IR blaster that can be used to control TV, Soundbar.
+  There is a IR receiver attached to the raspberry pi.  When the media player's remote is used, the 
+  raspberry pi detects the signals and sends it to the fifth board.  Then depending on which functionality
+  is selected, it will either send IR signals to the TV or the sound bar or control the lighting and
+  other stuff.
+
+July 22, 2015
+=============
 * Four boards are managed at the moment.
 * Details of the first board can be found at
   http://www.instructables.com/id/An-inexpensive-IoT-enabler-using-ESP8266/
-* Details of the second board can be found at
 
-* The third board is a Arduino Pro Mini/ESP8266/WS281B based mood lighting project
+* The second board is a Arduino Pro Mini/ESP8266/WS281B based mood lighting project
   in the living room.
 
-* The fourth board is a ATMEGA1284P/ESP8266 based project that uses relays with
+* The third board is a ATMEGA1284P/ESP8266 based project that uses relays with
   modified off-the-shelf power strips to act as a Network Power Switch.
